@@ -1,0 +1,157 @@
+header {
+  width: 75%;
+  margin: 10px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px; }
+  header ul:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 30%; }
+    header ul:first-child li:first-child {
+      font-size: 50px;
+      background: transparent;
+      padding: 5px; }
+      header ul:first-child li:first-child:hover {
+        background: #2e2d2d;
+        cursor: pointer; }
+        header ul:first-child li:first-child:hover .dropDownMenu {
+          top: 70px; }
+  header ul:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    header ul:nth-child(2) li:hover {
+      cursor: pointer;
+      color: yellow; }
+
+.dropDownMenu {
+  position: absolute;
+  -webkit-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  transition: top 0.2s;
+  top: -1000px;
+  margin-left: -5px;
+  width: 60%;
+  height: 500px;
+  background: #2e2d2d;
+  font-size: 14px;
+  padding: 30px;
+  cursor: default; }
+  .dropDownMenu .dropDownMenuSectionsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 80%; }
+    .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections {
+      width: 25%; }
+      .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections i {
+        font-size: 20px; }
+      .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections ul {
+        width: 100%;
+        display: inline-block; }
+        .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections ul li {
+          margin-bottom: 10px;
+          color: #b6b6b8;
+          font-weight: normal;
+          -webkit-transition: color 0.2s;
+          -o-transition: color 0.2s;
+          transition: color 0.2s; }
+          .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections ul li:hover {
+            color: yellow;
+            cursor: pointer; }
+        .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections ul li:first-child {
+          font-size: 14px;
+          margin-left: -5px;
+          color: white;
+          cursor: default; }
+    .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections:last-child li:last-child {
+      -webkit-transition: color 0.2s;
+      -o-transition: color 0.2s;
+      transition: color 0.2s; }
+      .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections:last-child li:last-child:hover {
+        color: #b6b6b8; }
+        .dropDownMenu .dropDownMenuSectionsContainer .dropDownMenuSections:last-child li:last-child:hover i:hover {
+          color: yellow; }
+  .dropDownMenu .dropDownMenuFooter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px; }
+    .dropDownMenu .dropDownMenuFooter button.dropDownMenuContact {
+      width: 300px;
+      height: 40px;
+      background: #1073ba;
+      border: none;
+      color: white;
+      outline: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      -webkit-transition: background 0.5s;
+      -o-transition: background 0.5s;
+      transition: background 0.5s;
+      margin-right: 50px; }
+      .dropDownMenu .dropDownMenuFooter button.dropDownMenuContact:hover {
+        background: #0f5791;
+        cursor: pointer; }
+    .dropDownMenu .dropDownMenuFooter .dropDownMenuFooterText {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 60%;
+      border-top: 1px solid white; }
+      .dropDownMenu .dropDownMenuFooter .dropDownMenuFooterText span:first-child {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .dropDownMenu .dropDownMenuFooter .dropDownMenuFooterText span:first-child p:nth-child(2) {
+          color: #1073ba; }
+      .dropDownMenu .dropDownMenuFooter .dropDownMenuFooterText span:last-child {
+        color: yellow; }
+
+.welcomeImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../pictures/home-bg-2.jpg);
+  height: 700px;
+  width: 100%;
+  z-index: -1; }

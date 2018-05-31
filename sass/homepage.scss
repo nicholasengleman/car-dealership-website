@@ -1,0 +1,147 @@
+header {
+	  width: 75%;
+	  margin: 10px auto 0 auto;
+	  display: flex;
+	  justify-content: space-between;
+	  color: white;
+	  font-family: 'Roboto', sans-serif;
+	  font-weight: bold;
+	  letter-spacing: 2px;
+	  ul:first-child {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 30%;
+			li:first-child {
+				  font-size: 50px;
+				  background: transparent;
+				  padding: 5px;
+				  &:hover {
+						background: #2e2d2d;
+						cursor: pointer;
+						.dropDownMenu {
+							 top: 70px;
+						}
+				  }
+			}
+	  }
+	  ul:nth-child(2) {
+			display: flex;
+			width: 40%;
+			justify-content: space-between;
+			align-items: center;
+			li:hover {
+				  cursor: pointer;
+				  color: yellow;
+			}
+	  }
+}
+
+.dropDownMenu {
+	  position: absolute;
+	  transition: top 0.2s;
+	  top: -1000px;
+	  margin-left: -5px;
+	  width: 60%;
+	  height: 500px;
+	  background: #2e2d2d;
+	  font-size: 14px;
+	  padding: 30px;
+	  cursor: default;
+	  .dropDownMenuSectionsContainer {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			height: 80%;
+			.dropDownMenuSections {
+				  width: 25%;
+				  i {
+						font-size: 20px;
+				  }
+
+				  ul {
+						width: 100%;
+						display: inline-block;
+						li {
+							  margin-bottom: 10px;
+							  color: #b6b6b8;
+							  font-weight: normal;
+							  transition: color 0.2s;
+							  &:hover {
+									color: yellow;
+									cursor: pointer;
+							  }
+						}
+						li:first-child {
+							  font-size: 14px;
+							  margin-left: -5px;
+							  color: white;
+							  cursor: default;
+
+						}
+				  }
+			}
+			.dropDownMenuSections:last-child {
+				  li:last-child {
+						transition: color 0.2s;
+						&:hover {
+							  color: #b6b6b8;
+							  i:hover {
+									color: yellow;
+							  }
+						}
+				  }
+			}
+	  }
+	  .dropDownMenuFooter {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			position: absolute;
+			bottom: 20px;
+			button.dropDownMenuContact {
+				  width: 300px;
+				  height: 40px;
+				  background: #1073ba;
+				  border: none;
+				  color: white;
+				  outline: none;
+				  font-weight: bold;
+				  letter-spacing: 1px;
+				  transition: background 0.5s;
+				  margin-right: 50px;
+				  &:hover {
+						background: #0f5791;
+						cursor: pointer;
+				  }
+			}
+			.dropDownMenuFooterText {
+				  display: flex;
+				  justify-content: space-between;
+				  align-items: center;
+				  width: 60%;
+				  border-top: 1px solid white;
+				  span:first-child {
+					display: flex;
+						p:nth-child(2) {
+							  color:  #1073ba;
+						}
+				  }
+				  span:last-child {
+						color: yellow;
+				  }
+			}
+
+	  }
+}
+
+.welcomeImage {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  background-image: url(../pictures/home-bg-2.jpg);
+	  height: 700px;
+	  width: 100%;
+	  z-index: -1;
+}
