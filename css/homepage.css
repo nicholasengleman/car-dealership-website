@@ -1,4 +1,18 @@
-header {
+body {
+  background-image: url(../pictures/home-bg-2.jpg);
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.boldFont {
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 800; }
+
+nav {
   width: 75%;
   margin: 10px auto 0 auto;
   display: -webkit-box;
@@ -11,7 +25,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   letter-spacing: 2px; }
-  header ul:first-child {
+  nav ul:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,16 +36,17 @@ header {
     -ms-flex-align: center;
     align-items: center;
     width: 30%; }
-    header ul:first-child li:first-child {
+    nav ul:first-child li:first-child {
       font-size: 50px;
       background: transparent;
       padding: 5px; }
-      header ul:first-child li:first-child:hover {
+      nav ul:first-child li:first-child:hover {
         background: #2e2d2d;
+        color: yellow;
         cursor: pointer; }
-        header ul:first-child li:first-child:hover .dropDownMenu {
+        nav ul:first-child li:first-child:hover .dropDownMenu {
           top: 70px; }
-  header ul:nth-child(2) {
+  nav ul:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,7 +57,7 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    header ul:nth-child(2) li:hover {
+    nav ul:nth-child(2) li:hover {
       cursor: pointer;
       color: yellow; }
 
@@ -146,12 +161,196 @@ header {
       .dropDownMenu .dropDownMenuFooter .dropDownMenuFooterText span:last-child {
         color: yellow; }
 
-.welcomeImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: url(../pictures/home-bg-2.jpg);
-  height: 700px;
+.greeting {
+  margin: 150px auto 0 auto;
+  width: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: 800; }
+  .greeting span:first-child {
+    color: white; }
+  .greeting span:last-child {
+    color: yellow; }
+
+form#carform {
+  width: 65%;
+  margin: 150px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  form#carform select, form#carform button {
+    width: 24%;
+    height: 50px;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid grey; }
+  form#carform select:hover, form#carform button:hover {
+    cursor: pointer; }
+  form#carform button {
+    background-color: #FBE42F;
+    color: white;
+    outline: none; }
+
+main {
   width: 100%;
-  z-index: -1; }
+  background: white;
+  height: 3000px;
+  margin-top: 25px;
+  border-top: 1px solid transparent; }
+
+.selectCars {
+  width: 68%;
+  margin: 100px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .selectCars .sideBar h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900; }
+    .selectCars .sideBar h2 span:first-child {
+      color: #1073BA; }
+    .selectCars .sideBar h2 span:last-child {
+      color: yellow; }
+  .selectCars .sideBar .selectCarsSelector {
+    width: 400px;
+    height: 60px;
+    margin: 10px 0;
+    background: #1073BA;
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 10px; }
+  .selectCars .sideBar hr {
+    width: 25%;
+    height: 5px;
+    background-color: #969698;
+    border: none;
+    margin: 50px auto; }
+  .selectCars .sideBar .sideBarExplanation {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #969698;
+    line-height: 35px; }
+
+.autosContainer {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .autosContainer a.auto {
+    text-align: center;
+    width: 20%;
+    margin-bottom: 70px; }
+    .autosContainer a.auto img {
+      width: 80%; }
+    .autosContainer a.auto h3 {
+      font-size: 16px;
+      color: #D1CAC8;
+      margin-top: 20px; }
+    .autosContainer a.auto:hover h3 {
+      color: #000000; }
+
+.featuresContainer {
+  width: 68%;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .featuresContainer .feature {
+    width: 50%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    font-family: 'montserrat', sans-serif; }
+    .featuresContainer .feature .featureHeading {
+      margin: 30px 0 30px 30px;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 800; }
+    .featuresContainer .feature .featureHeading.firstRow {
+      margin-top: 150px; }
+    .featuresContainer .feature span.firstRow {
+      color: yellow; }
+    .featuresContainer .feature span.secondRow {
+      color: blue; }
+    .featuresContainer .feature hr {
+      width: 50px;
+      height: 8px;
+      background: white; }
+    .featuresContainer .feature .summary {
+      margin: 30px 0 0 30px;
+      line-height: 30px;
+      font-weight: 500; }
+      .featuresContainer .feature .summary p.firstRow:first-child {
+        color: yellow;
+        font-size: 25px; }
+      .featuresContainer .feature .summary p.secondRow:first-child {
+        color: white;
+        font-size: 25px; }
+      .featuresContainer .feature .summary h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 600; }
+      .featuresContainer .feature .summary p.firstRow:nth-child(3) {
+        margin-top: 10px;
+        color: white;
+        font-size: 20px; }
+    .featuresContainer .feature button:first-of-type {
+      padding: 15px 30px;
+      border: none;
+      outline: none;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      background-color: #1073BA;
+      -webkit-transition: background-color 0.2s;
+      -o-transition: background-color 0.2s;
+      transition: background-color 0.2s; }
+    .featuresContainer .feature button:last-of-type {
+      padding: 15px 30px;
+      border: none;
+      outline: none;
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      background-color: #1073BA;
+      -webkit-transition: background-color 0.2s;
+      -o-transition: background-color 0.2s;
+      transition: background-color 0.2s; }
+    .featuresContainer .feature button:hover {
+      cursor: pointer;
+      background-color: #105495; }
+  .featuresContainer .feature:nth-child(1) {
+    background-image: url("../pictures/features/service-tile-bg.jpg"); }
+  .featuresContainer .feature:nth-child(2) {
+    background-image: url("../pictures/features/dgdg-buy-center.jpg"); }
+  .featuresContainer .feature:nth-child(3) {
+    background-image: url("../pictures/features/tile-priced-up-front-bg.jpg"); }
+  .featuresContainer .feature:nth-child(4) {
+    background-color: #F99500; }
+  .featuresContainer .feature:nth-child(5) {
+    background-image: url("../pictures/features/our-promise.jpg"); }
+  .featuresContainer .feature:nth-child(6) {
+    background-image: url("../pictures/features/happy-tile.jpg"); }
