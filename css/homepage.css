@@ -1,5 +1,14 @@
+html {
+  font-size: 87.5%; }
+  @media all and (min-width: 400px) {
+    html {
+      font-size: 100%; } }
+  @media all and (min-width: 800px) {
+    html {
+      font-size: 112.5%; } }
+
 body {
-  font-family: "montserrat",sans-serif; }
+  font-family: "montserrat", sans-serif; }
 
 header {
   border-top: 1px solid transparent;
@@ -35,37 +44,42 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 30%; }
+    width: 50%; }
     nav ul:first-child li:first-child {
       font-size: 50px;
       background: transparent;
-      padding: 5px; }
+      padding: 5px;
+      margin-right: 30px; }
       nav ul:first-child li:first-child:hover {
         background: #2e2d2d;
         color: yellow;
         cursor: pointer; }
-        nav ul:first-child li:first-child:hover .dropDownMenu {
-          top: 70px; }
   nav ul:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    width: 50%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    nav ul:nth-child(2) li {
+      margin-right: 20px; }
     nav ul:nth-child(2) li:hover {
       cursor: pointer;
       color: yellow; }
+
+@media (max-width: 1200px) {
+  nav ul:first-child li:last-of-type {
+    display: none; } }
 
 .greeting {
   margin: 150px auto 0 auto;
@@ -114,38 +128,45 @@ main {
   margin: 100px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .selectCars .sideBar h2 {
-    font-size: 80px;
-    text-transform: uppercase;
-    font-weight: 900; }
-    .selectCars .sideBar h2 span:first-child {
-      color: #1073BA; }
-    .selectCars .sideBar h2 span:last-child {
-      color: yellow; }
-  .selectCars .sideBar .selectCarsSelector {
-    width: 400px;
-    height: 60px;
-    margin: 10px 0;
-    background: #1073BA;
-    color: white;
-    font-size: 40px;
-    line-height: 60px;
-    padding-left: 10px; }
-  .selectCars .sideBar hr {
-    width: 25%;
-    height: 5px;
-    background-color: #969698;
-    border: none;
-    margin: 50px auto; }
-  .selectCars .sideBar .sideBarExplanation {
-    margin-top: 20px;
-    font-size: 25px;
-    color: #969698;
-    line-height: 35px; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .selectCars .sideBar {
+    width: 40%; }
+    .selectCars .sideBar h2 {
+      font-size: 80px;
+      text-transform: uppercase;
+      font-weight: 900; }
+      .selectCars .sideBar h2 span:first-child {
+        color: #1073BA; }
+      .selectCars .sideBar h2 span:last-child {
+        color: yellow; }
+    .selectCars .sideBar .selectCarsSelector {
+      width: 400px;
+      height: 60px;
+      margin: 10px 0;
+      background: #1073BA;
+      color: white;
+      font-size: 40px;
+      line-height: 60px;
+      padding-left: 10px; }
+    .selectCars .sideBar hr {
+      width: 25%;
+      height: 5px;
+      background-color: #969698;
+      border: none;
+      margin: 50px auto; }
+    .selectCars .sideBar .sideBarExplanation {
+      margin-top: 20px;
+      font-size: 25px;
+      color: #969698;
+      line-height: 35px; }
 
 .autosContainer {
-  margin-left: 50px;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,6 +188,15 @@ main {
     .autosContainer a.auto:hover h3 {
       color: #000000; }
 
+@media (max-width: 1400px) {
+  .selectCars .sideBar, .selectCars .autosContainer {
+    width: 100%; }
+  .selectCars .sideBar {
+    text-align: center;
+    margin: 0 auto 20px auto; }
+    .selectCars .sideBar .selectCarsSelector {
+      margin: 20px auto; } }
+
 .featuresContainer {
   width: 68%;
   margin: 100px auto;
@@ -181,11 +211,10 @@ main {
     background-size: cover;
     background-position: center;
     color: white;
-    position: relative;
-    font-family: 'montserrat', sans-serif; }
+    position: relative; }
     .featuresContainer .feature .featureHeading {
       margin: 30px 0 30px 30px;
-      font-size: 60px;
+      font-size: 3rem;
       text-transform: uppercase;
       font-weight: 800; }
     .featuresContainer .feature .featureHeading.firstRow {
@@ -262,6 +291,18 @@ main {
   .featuresContainer .feature:nth-child(6) {
     background-image: url("../pictures/features/happy-tile.jpg"); }
 
+@media (max-width: 1400px) {
+  .featuresContainer {
+    width: 85%; } }
+
+@media (max-width: 1100px) {
+  .featuresContainer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .featuresContainer .feature {
+      width: 90%; } }
+
 .nextSteps {
   width: 70%;
   margin: 0 auto; }
@@ -328,6 +369,12 @@ main {
         cursor: pointer;
         color: #5c5c5e; }
 
+@media (max-width: 1500px) {
+  .nextSteps {
+    width: 80%; }
+    .nextSteps .nextStepsContainer .nextStep {
+      width: 45%; } }
+
 .mottoContainer {
   width: 100%;
   background-color: #1073BA;
@@ -344,11 +391,16 @@ main {
       color: yellow; }
   .mottoContainer .mottoDescription {
     width: 40%;
-    margin: 0 auto 100px auto; }
+    margin: 0 auto 100px auto;
+    line-height: 40px; }
     .mottoContainer .mottoDescription p {
       font-size: 30px;
       color: white;
       text-align: center; }
+
+@media (max-width: 1000px) {
+  .mottoContainer .mottoDescription {
+    width: 80%; } }
 
 footer {
   margin: 0 auto;
@@ -371,13 +423,13 @@ footer {
     margin: 0 auto;
     height: 80%; }
     footer .dropDownMenuSectionsContainer .dropDownMenuSections {
-      width: 20%; }
+      width: 25%; }
       footer .dropDownMenuSectionsContainer .dropDownMenuSections i {
         font-size: 20px; }
       footer .dropDownMenuSectionsContainer .dropDownMenuSections ul {
         width: 100%;
         display: inline-block;
-        margin-left: 30%; }
+        margin: 20px 0 0 35%; }
         footer .dropDownMenuSectionsContainer .dropDownMenuSections ul li {
           margin-bottom: 10px;
           color: #b6b6b8;
@@ -408,7 +460,7 @@ footer {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-left: 70px; }
+    margin-left: 110px; }
     footer .dropDownMenuFooter button.dropDownMenuContact {
       width: 300px;
       height: 40px;
