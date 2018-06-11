@@ -1,3 +1,7 @@
+@import 'reset';
+@import 'header';
+@import 'footer';
+
 $headings: #FBE42F;
 
 html {
@@ -10,6 +14,10 @@ html {
 	  }
 }
 
+a {
+	  text-decoration: none;
+}
+
 body {
 	  font-family: "montserrat", sans-serif;
 }
@@ -17,13 +25,12 @@ body {
 header {
 	  border-top: 1px solid transparent;
 	  border-bottom: 1px solid transparent;
-	  background-image: url(../images/car-dealership-images/home-bg-2.jpg);
+	  background-image: url('../../images/car-dealership-images/home-bg-2.jpg');
 	  width: 100%;
 	  padding-bottom: 30px;
-}
-
-a {
-	  text-decoration: none;
+	  position: static;
+	  z-index: 0;
+	  height: auto;
 }
 
 .boldFont {
@@ -307,22 +314,22 @@ main {
 
 	  }
 	  .feature:nth-child(1) {
-			background-image: url("../images/car-dealership-images/features/service-tile-bg.jpg");
+			background-image: url("../../images/car-dealership-images/features/service-tile-bg.jpg");
 	  }
 	  .feature:nth-child(2) {
-			background-image: url("../images/car-dealership-images/features/dgdg-buy-center.jpg");
+			background-image: url("../../images/car-dealership-images/features/dgdg-buy-center.jpg");
 	  }
 	  .feature:nth-child(3) {
-			background-image: url("../images/car-dealership-images/features/tile-priced-up-front-bg.jpg");
+			background-image: url("../../images/car-dealership-images/features/tile-priced-up-front-bg.jpg");
 	  }
 	  .feature:nth-child(4) {
 			background-color: #F99500;
 	  }
 	  .feature:nth-child(5) {
-			background-image: url("../images/car-dealership-images/features/our-promise.jpg");
+			background-image: url("../../images/car-dealership-images/features/our-promise.jpg");
 	  }
 	  .feature:nth-child(6) {
-			background-image: url("../images/car-dealership-images/features/happy-tile.jpg");
+			background-image: url("../../images/car-dealership-images/features/happy-tile.jpg");
 	  }
 }
 

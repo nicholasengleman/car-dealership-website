@@ -1,3 +1,7 @@
+@import 'reset';
+@import 'header';
+@import 'footer';
+
 $blue: #1096D6;
 
 body {
@@ -7,7 +11,7 @@ body {
 .title {
 	  width: 100%;
 	  height: 250px;
-	  background-image: url("../images/service/banner.jpg");
+	  background-image: url("../images/car-dealership-images/service/banner.jpg");
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	  border: 1px solid transparent;
