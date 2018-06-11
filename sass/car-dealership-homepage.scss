@@ -1,3 +1,5 @@
+$headings: #FBE42F;
+
 html {
 	  font-size: 87.5%;
 	  @media all and (min-width: 400px) {
@@ -15,7 +17,7 @@ body {
 header {
 	  border-top: 1px solid transparent;
 	  border-bottom: 1px solid transparent;
-	  background-image: url(../pictures/home-bg-2.jpg);
+	  background-image: url(../images/car-dealership-images/home-bg-2.jpg);
 	  width: 100%;
 	  padding-bottom: 30px;
 }
@@ -53,7 +55,7 @@ nav {
 				  margin-right: 30px;
 				  &:hover {
 						background: #2e2d2d;
-						color: yellow;
+						color: $headings;
 						cursor: pointer;
 				  }
 			}
@@ -68,7 +70,7 @@ nav {
 			}
 			li:hover {
 				  cursor: pointer;
-				  color: yellow;
+				  color: $headings;
 			}
 	  }
 }
@@ -92,7 +94,7 @@ nav {
 			color: white;
 	  }
 	  span:last-child {
-			color: yellow;
+			color: $headings;
 	  }
 }
 
@@ -101,6 +103,7 @@ form#carform {
 	  margin: 150px auto 0 auto;
 	  display: flex;
 	  justify-content: space-between;
+	  font-family: 'Roboto', sans-serif;
 	  select, button {
 			width: 24%;
 			height: 50px;
@@ -112,9 +115,13 @@ form#carform {
 			cursor: pointer;
 	  }
 	  button {
-			background-color: #FBE42F;
+			background-color: $headings;
 			color: white;
 			outline: none;
+			transition: background-color 0.2s;
+	  }
+	  button:hover {
+			background-color: #e0c92e
 	  }
 
 }
@@ -142,7 +149,7 @@ main {
 						color: #1073BA;
 				  }
 				  span:last-child {
-						color: yellow;
+						color: $headings;
 				  }
 			}
 			.selectCarsSelector {
@@ -187,7 +194,7 @@ main {
 				  font-size: 16px;
 				  color: #D1CAC8;
 				  margin-top: 20px;
-
+				  transition: color 0.2s;
 			}
 			&:hover h3 {
 				  color: #000000;
@@ -231,7 +238,7 @@ main {
 				  margin-top: 150px;
 			}
 			span.firstRow {
-				  color: yellow;
+				  color: $headings;
 			}
 			span.secondRow {
 				  color: blue;
@@ -249,7 +256,7 @@ main {
 				  line-height: 30px;
 				  font-weight: 500;
 				  p.firstRow:first-child {
-						color: yellow;
+						color: $headings;
 						font-size: 25px;
 				  }
 				  p.secondRow:first-child {
@@ -300,22 +307,22 @@ main {
 
 	  }
 	  .feature:nth-child(1) {
-			background-image: url("../pictures/features/service-tile-bg.jpg");
+			background-image: url("../images/car-dealership-images/features/service-tile-bg.jpg");
 	  }
 	  .feature:nth-child(2) {
-			background-image: url("../pictures/features/dgdg-buy-center.jpg");
+			background-image: url("../images/car-dealership-images/features/dgdg-buy-center.jpg");
 	  }
 	  .feature:nth-child(3) {
-			background-image: url("../pictures/features/tile-priced-up-front-bg.jpg");
+			background-image: url("../images/car-dealership-images/features/tile-priced-up-front-bg.jpg");
 	  }
 	  .feature:nth-child(4) {
 			background-color: #F99500;
 	  }
 	  .feature:nth-child(5) {
-			background-image: url("../pictures/features/our-promise.jpg");
+			background-image: url("../images/car-dealership-images/features/our-promise.jpg");
 	  }
 	  .feature:nth-child(6) {
-			background-image: url("../pictures/features/happy-tile.jpg");
+			background-image: url("../images/car-dealership-images/features/happy-tile.jpg");
 	  }
 }
 
@@ -347,7 +354,7 @@ main {
 				  color: #B6B6B8;
 			}
 			span:last-of-type {
-				  color: #d5d500;
+				  color: $headings;
 			}
 	  }
 	  .nextStepsContainer {
@@ -425,7 +432,7 @@ main {
 				  color: white;
 			}
 			span:last-of-type {
-				  color: yellow;
+				  color: $headings;
 			}
 	  }
 	  .mottoDescription {
@@ -445,103 +452,5 @@ main {
 			width: 80%;
 	  }
 }
-
-footer {
-	  margin: 0 auto;
-	  padding: 20px 0;
-	  width: 100%;
-	  background: #2e2d2d;
-	  font-size: 14px;
-	  box-sizing: border-box;
-	  .dropDownMenuSectionsContainer {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			width: 70%;
-			margin: 0 auto;
-			height: 80%;
-			.dropDownMenuSections {
-				  width: 25%;
-				  i {
-						font-size: 20px;
-				  }
-
-				  ul {
-						width: 100%;
-						display: inline-block;
-						margin: 20px 0 0 35%;
-						li {
-							  margin-bottom: 10px;
-							  color: #b6b6b8;
-							  font-weight: normal;
-							  transition: color 0.2s;
-							  &:hover {
-									color: yellow;
-									cursor: pointer;
-							  }
-						}
-						li:first-child {
-							  font-size: 14px;
-							  color: white;
-							  cursor: default;
-
-						}
-				  }
-			}
-			.dropDownMenuSections:last-child {
-				  li:last-child {
-						transition: color 0.2s;
-						&:hover {
-							  color: #b6b6b8;
-							  i:hover {
-									color: yellow;
-							  }
-						}
-				  }
-			}
-	  }
-	  .dropDownMenuFooter {
-			width: 100%;
-			display: flex;
-			justify-content: flex-start;
-			margin-left: 110px;
-			button.dropDownMenuContact {
-				  width: 300px;
-				  height: 40px;
-				  background: #1073ba;
-				  border: none;
-				  color: white;
-				  outline: none;
-				  font-weight: bold;
-				  letter-spacing: 1px;
-				  transition: background 0.5s;
-				  margin-right: 50px;
-				  &:hover {
-						background: #0f5791;
-						cursor: pointer;
-				  }
-			}
-			.dropDownMenuFooterText {
-				  color: white;
-				  display: flex;
-				  justify-content: space-between;
-				  align-items: center;
-				  width: 60%;
-				  border-top: 1px solid white;
-				  span:first-child {
-						display: flex;
-						p:nth-child(2) {
-							  color: #1073ba;
-						}
-				  }
-				  span:last-child {
-						color: yellow;
-				  }
-			}
-	  }
-}
-
-
-
 
 
